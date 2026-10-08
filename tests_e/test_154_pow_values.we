@@ -1,0 +1,4 @@
+print "File: test_154_pow_values.we"
+if pow(2, 10) == 1024 { print "PASS: integer power" } else { print "FAIL: integer power" }
+if pow(5, 0) == 1 { print "PASS: zero exponent" } else { print "FAIL: zero exponent" }
+print "test_154 done"

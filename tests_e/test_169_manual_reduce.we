@@ -1,0 +1,8 @@
+print "File: test_169_manual_reduce.we"
+func sum_list(values) {
+    let total = 0
+    foreach value in values { total = total + value }
+    return total
+}
+if sum_list([3, 6, 9, 12]) == 30 { print "PASS: manual reduce" } else { print "FAIL: manual reduce" }
+print "test_169 done"

@@ -1,0 +1,8 @@
+print "File: test_114_while_zero_iterations.we"
+let ran = false
+let i = 10
+while i < 10 {
+    ran = true
+}
+if ran == false { print "PASS: zero iteration while" } else { print "FAIL: zero iteration while" }
+print "test_114 done"

@@ -1,0 +1,5 @@
+print "File: test_161_map_empty.we"
+let values = []
+let mapped = map(values, func(x) { return x * 2 })
+if len(mapped) == 0 { print "PASS: map empty list" } else { print "FAIL: map empty list" }
+print "test_161 done"

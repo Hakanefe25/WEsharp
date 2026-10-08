@@ -1,0 +1,27 @@
+print "File: test_200_native_rewrite_conformance_master.we"
+// Backend-agnostic language conformance smoke test for the native rewrite.
+func make_multiplier(factor) {
+    func multiply(value) { return value * factor }
+    return multiply
+}
+let times3 = make_multiplier(3)
+let values = map(range(1, 6), times3)
+let state = {"ok": true, "sum": 0, "values": values}
+
+foreach value in state["values"] {
+    state["sum"] = state["sum"] + value
+}
+
+if state["sum"] == 45 { print "PASS: native rewrite arithmetic+closure+map" } else { print "FAIL: native rewrite arithmetic+closure+map" }
+
+let caught = false
+try {
+    let bad = state["values"][999]
+} catch {
+    caught = true
+}
+if caught == true { print "PASS: native rewrite exception path" } else { print "FAIL: native rewrite exception path" }
+
+let text = join(map(["we", "sharp"], func(x) { return str_upper(x) }), "-")
+if text == "WE-SHARP" { print "PASS: native rewrite string+higher-order" } else { print "FAIL: native rewrite string+higher-order" }
+print "test_200 done"

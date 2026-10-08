@@ -1,0 +1,6 @@
+print "File: test_142_nested_dict.we"
+let data = {"outer": {"inner": {"value": 42}}}
+if data["outer"]["inner"]["value"] == 42 { print "PASS: nested dictionary lookup" } else { print "FAIL: nested dictionary lookup" }
+data["outer"]["inner"]["value"] = 84
+if data["outer"]["inner"]["value"] == 84 { print "PASS: nested dictionary mutation" } else { print "FAIL: nested dictionary mutation" }
+print "test_142 done"

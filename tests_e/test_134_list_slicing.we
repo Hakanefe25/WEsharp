@@ -1,0 +1,6 @@
+print "File: test_134_list_slicing.we"
+let values = [0, 1, 2, 3, 4, 5]
+let mid = values[2:5]
+if len(mid) == 3 { print "PASS: slice length" } else { print "FAIL: slice length" }
+if mid[0] == 2 && mid[2] == 4 { print "PASS: slice contents" } else { print "FAIL: slice contents" }
+print "test_134 done"

@@ -1,0 +1,8 @@
+print "File: test_158_trig_reference_angles.we"
+let s0 = math_basic("sin", 0)
+let s90 = math_basic("sin", 90)
+let c0 = math_basic("cos", 0)
+if abs(s0) < 0.001 { print "PASS: sin zero" } else { print "FAIL: sin zero" }
+if s90 > 0.999 && s90 < 1.001 { print "PASS: sin ninety" } else { print "FAIL: sin ninety" }
+if c0 > 0.999 && c0 < 1.001 { print "PASS: cos zero" } else { print "FAIL: cos zero" }
+print "test_158 done"

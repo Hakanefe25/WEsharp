@@ -1,0 +1,7 @@
+print "File: test_140_sort_reverse_duplicates.we"
+let values = [4, 2, 4, 1, 2, 3]
+let ordered = sort(values)
+if ordered[0] == 1 && ordered[5] == 4 { print "PASS: sort with duplicates" } else { print "FAIL: sort with duplicates" }
+let rev = reverse(ordered)
+if rev[0] == 4 && rev[5] == 1 { print "PASS: reverse sorted values" } else { print "FAIL: reverse sorted values" }
+print "test_140 done"

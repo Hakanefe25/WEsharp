@@ -1,0 +1,13 @@
+print "File: test_171_linear_search.we"
+func find_index(values, target) {
+    let i = 0
+    while i < len(values) {
+        if values[i] == target { return i }
+        i = i + 1
+    }
+    return -1
+}
+let values = [8, 4, 9, 2, 7]
+if find_index(values, 2) == 3 { print "PASS: linear search found" } else { print "FAIL: linear search found" }
+if find_index(values, 99) == -1 { print "PASS: linear search missing" } else { print "FAIL: linear search missing" }
+print "test_171 done"

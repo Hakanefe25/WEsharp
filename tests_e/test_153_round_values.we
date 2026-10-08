@@ -1,0 +1,4 @@
+print "File: test_153_round_values.we"
+if round(4.2) == 4 { print "PASS: round down" } else { print "FAIL: round down" }
+if round(4.8) == 5 { print "PASS: round up" } else { print "FAIL: round up" }
+print "test_153 done"

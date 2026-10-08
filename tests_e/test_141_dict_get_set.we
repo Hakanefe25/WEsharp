@@ -1,0 +1,7 @@
+print "File: test_141_dict_get_set.we"
+let item = {"name": "axon", "count": 2}
+if item["name"] == "axon" { print "PASS: dict get" } else { print "FAIL: dict get" }
+item["count"] = 3
+item["active"] = true
+if item["count"] == 3 && item["active"] == true { print "PASS: dict update and insert" } else { print "FAIL: dict update and insert" }
+print "test_141 done"

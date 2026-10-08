@@ -1,0 +1,5 @@
+print "File: test_147_string_slicing.we"
+let s = "WSharpNative"
+let part = s[6:12]
+if part == "Native" { print "PASS: string slice" } else { print "FAIL: string slice" }
+print "test_147 done"

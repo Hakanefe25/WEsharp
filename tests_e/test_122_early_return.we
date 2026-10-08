@@ -1,0 +1,10 @@
+print "File: test_122_early_return.we"
+func classify(x) {
+    if x < 0 { return -1 }
+    if x == 0 { return 0 }
+    return 1
+}
+if classify(-4) == -1 { print "PASS: early negative return" } else { print "FAIL: early negative return" }
+if classify(0) == 0 { print "PASS: early zero return" } else { print "FAIL: early zero return" }
+if classify(8) == 1 { print "PASS: final return" } else { print "FAIL: final return" }
+print "test_122 done"

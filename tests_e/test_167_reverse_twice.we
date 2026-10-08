@@ -1,0 +1,6 @@
+print "File: test_167_reverse_twice.we"
+let values = [1, 2, 3, 4, 5]
+let once = reverse(values)
+let twice = reverse(once)
+if twice[0] == 1 && twice[4] == 5 { print "PASS: reverse twice restores order" } else { print "FAIL: reverse twice restores order" }
+print "test_167 done"

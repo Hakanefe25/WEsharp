@@ -1,0 +1,5 @@
+print "File: test_138_range_ascending.we"
+let values = range(5, 10)
+if len(values) == 5 { print "PASS: ascending range length" } else { print "FAIL: ascending range length" }
+if values[0] == 5 && values[4] == 9 { print "PASS: ascending range bounds" } else { print "FAIL: ascending range bounds" }
+print "test_138 done"

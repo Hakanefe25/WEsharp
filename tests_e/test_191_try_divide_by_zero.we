@@ -1,0 +1,9 @@
+print "File: test_191_try_divide_by_zero.we"
+let caught = false
+try {
+    let value = 1 / 0
+} catch {
+    caught = true
+}
+if caught == true { print "PASS: divide by zero caught" } else { print "FAIL: divide by zero caught" }
+print "test_191 done"

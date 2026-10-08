@@ -1,0 +1,6 @@
+print "File: test_156_avg_values.we"
+let values = [2, 4, 6, 8, 10]
+if avg(values) == 6 { print "PASS: average integer list" } else { print "FAIL: average integer list" }
+let values2 = [-5, 0, 5]
+if avg(values2) == 0 { print "PASS: average symmetric list" } else { print "FAIL: average symmetric list" }
+print "test_156 done"

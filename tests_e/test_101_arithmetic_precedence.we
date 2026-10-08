@@ -1,0 +1,6 @@
+print "File: test_101_arithmetic_precedence.we"
+let value = 2 + 3 * 4
+if value == 14 { print "PASS: multiplication precedence" } else { print "FAIL: multiplication precedence" }
+let value2 = 20 / 5 + 6
+if value2 == 10 { print "PASS: division before addition" } else { print "FAIL: division before addition" }
+print "test_101 done"

@@ -1,0 +1,12 @@
+print "File: test_199_mixed_integration.we"
+func transform(values) {
+    let filtered = filter(values, func(x) { return x % 2 == 0 })
+    return map(filtered, func(x) { return x * x })
+}
+let source = range(1, 11)
+let result = transform(source)
+let total = 0
+foreach value in result { total = total + value }
+if len(result) == 5 { print "PASS: integration transformed length" } else { print "FAIL: integration transformed length" }
+if total == 220 { print "PASS: integration transformed sum" } else { print "FAIL: integration transformed sum" }
+print "test_199 done"

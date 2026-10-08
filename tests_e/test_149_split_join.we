@@ -1,0 +1,6 @@
+print "File: test_149_split_join.we"
+let parts = split("a,b,c,d", ",")
+if len(parts) == 4 { print "PASS: split length" } else { print "FAIL: split length" }
+let text = join(parts, "-")
+if text == "a-b-c-d" { print "PASS: join values" } else { print "FAIL: join values" }
+print "test_149 done"

@@ -1,0 +1,6 @@
+print "File: test_160_log_ln_values.we"
+let log100 = math_basic("log", 100)
+if log100 > 1.999 && log100 < 2.001 { print "PASS: log10 100" } else { print "FAIL: log10 100" }
+let ln1 = math_basic("ln", 1)
+if abs(ln1) < 0.001 { print "PASS: ln one" } else { print "FAIL: ln one" }
+print "test_160 done"

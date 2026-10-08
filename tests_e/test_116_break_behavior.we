@@ -1,0 +1,8 @@
+print "File: test_116_break_behavior.we"
+let i = 0
+while i < 100 {
+    i = i + 1
+    if i == 17 { break }
+}
+if i == 17 { print "PASS: break exits loop" } else { print "FAIL: break exits loop" }
+print "test_116 done"

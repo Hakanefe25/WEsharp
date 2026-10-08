@@ -1,0 +1,9 @@
+print "File: test_115_while_sum.we"
+let i = 1
+let sum = 0
+while i <= 20 {
+    sum = sum + i
+    i = i + 1
+}
+if sum == 210 { print "PASS: while sum 1..20" } else { print "FAIL: while sum 1..20" }
+print "test_115 done"

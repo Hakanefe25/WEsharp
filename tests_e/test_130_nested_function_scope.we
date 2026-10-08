@@ -1,0 +1,10 @@
+print "File: test_130_nested_function_scope.we"
+func outer(a) {
+    let b = 3
+    func inner(c) {
+        return a + b + c
+    }
+    return inner(4)
+}
+if outer(5) == 12 { print "PASS: nested function scope" } else { print "FAIL: nested function scope" }
+print "test_130 done"

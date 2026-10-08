@@ -1,0 +1,6 @@
+print "File: test_181_kinematics.we"
+func position(x0, v0, a, t) { return x0 + v0 * t + 0.5 * a * t * t }
+func velocity(v0, a, t) { return v0 + a * t }
+if position(0, 10, 2, 5) == 75 { print "PASS: kinematics position" } else { print "FAIL: kinematics position" }
+if velocity(10, 2, 5) == 20 { print "PASS: kinematics velocity" } else { print "FAIL: kinematics velocity" }
+print "test_181 done"

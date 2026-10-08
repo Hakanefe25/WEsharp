@@ -1,0 +1,6 @@
+print "File: test_108_reassignment.we"
+let x = 5
+x = x + 10
+x = x * 2
+if x == 30 { print "PASS: repeated reassignment" } else { print "FAIL: repeated reassignment" }
+print "test_108 done"

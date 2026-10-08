@@ -1,0 +1,6 @@
+print "File: test_137_foreach_sum.we"
+let values = [2, 4, 6, 8, 10]
+let sum = 0
+foreach value in values { sum = sum + value }
+if sum == 30 { print "PASS: foreach list sum" } else { print "FAIL: foreach list sum" }
+print "test_137 done"

@@ -1,0 +1,13 @@
+print "File: test_118_nested_loops.we"
+let count = 0
+let i = 0
+while i < 4 {
+    let j = 0
+    while j < 3 {
+        count = count + 1
+        j = j + 1
+    }
+    i = i + 1
+}
+if count == 12 { print "PASS: nested loop count" } else { print "FAIL: nested loop count" }
+print "test_118 done"

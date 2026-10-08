@@ -1,0 +1,5 @@
+print "File: test_146_string_indexing.we"
+let s = "neuron"
+if s[0] == "n" { print "PASS: string first char" } else { print "FAIL: string first char" }
+if s[5] == "n" { print "PASS: string last char" } else { print "FAIL: string last char" }
+print "test_146 done"

@@ -1,0 +1,14 @@
+print "File: test_188_moving_average.we"
+func moving_average3(values) {
+    let out = []
+    let i = 0
+    while i <= len(values) - 3 {
+        push(out, (values[i] + values[i + 1] + values[i + 2]) / 3.0)
+        i = i + 1
+    }
+    return out
+}
+let avg3 = moving_average3([1, 2, 3, 4, 5])
+if len(avg3) == 3 { print "PASS: moving average length" } else { print "FAIL: moving average length" }
+if avg3[0] == 2 && avg3[2] == 4 { print "PASS: moving average values" } else { print "FAIL: moving average values" }
+print "test_188 done"

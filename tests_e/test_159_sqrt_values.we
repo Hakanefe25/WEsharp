@@ -1,0 +1,4 @@
+print "File: test_159_sqrt_values.we"
+if sqrt(81) == 9 { print "PASS: sqrt 81" } else { print "FAIL: sqrt 81" }
+if sqrt(0) == 0 { print "PASS: sqrt zero" } else { print "FAIL: sqrt zero" }
+print "test_159 done"

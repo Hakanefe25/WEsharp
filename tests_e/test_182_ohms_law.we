@@ -1,0 +1,6 @@
+print "File: test_182_ohms_law.we"
+func voltage(current, resistance) { return current * resistance }
+func current(voltage_value, resistance) { return voltage_value / resistance }
+if voltage(2, 5) == 10 { print "PASS: ohms voltage" } else { print "FAIL: ohms voltage" }
+if current(12, 4) == 3 { print "PASS: ohms current" } else { print "FAIL: ohms current" }
+print "test_182 done"

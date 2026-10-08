@@ -1,0 +1,5 @@
+print "File: test_135_nested_lists.we"
+let matrix = [[1, 2], [3, 4], [5, 6]]
+if matrix[1][0] == 3 { print "PASS: nested list read" } else { print "FAIL: nested list read" }
+if matrix[2][1] == 6 { print "PASS: nested list second read" } else { print "FAIL: nested list second read" }
+print "test_135 done"

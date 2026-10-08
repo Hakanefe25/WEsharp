@@ -1,0 +1,5 @@
+print "File: test_143_list_of_dicts.we"
+let rows = [{"id": 1}, {"id": 2}, {"id": 3}]
+if rows[0]["id"] == 1 { print "PASS: list dictionary first" } else { print "FAIL: list dictionary first" }
+if rows[2]["id"] == 3 { print "PASS: list dictionary last" } else { print "FAIL: list dictionary last" }
+print "test_143 done"

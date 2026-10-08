@@ -1,0 +1,4 @@
+print "File: test_183_kinetic_energy.we"
+func kinetic_energy(mass, velocity) { return 0.5 * mass * velocity * velocity }
+if kinetic_energy(2, 3) == 9 { print "PASS: kinetic energy" } else { print "FAIL: kinetic energy" }
+print "test_183 done"

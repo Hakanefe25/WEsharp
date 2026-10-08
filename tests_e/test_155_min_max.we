@@ -1,0 +1,5 @@
+print "File: test_155_min_max.we"
+let values = [-8, 4, 19, 0, 3]
+if min(values) == -8 { print "PASS: min mixed values" } else { print "FAIL: min mixed values" }
+if max(values) == 19 { print "PASS: max mixed values" } else { print "FAIL: max mixed values" }
+print "test_155 done"

@@ -1,0 +1,8 @@
+print "File: test_113_nested_if.we"
+let x = 9
+let result = 0
+if x > 0 {
+    if x % 3 == 0 { result = 3 } else { result = 1 }
+}
+if result == 3 { print "PASS: nested if" } else { print "FAIL: nested if" }
+print "test_113 done"

@@ -1,0 +1,7 @@
+print "File: test_107_boolean_logic.we"
+let t = true
+let f = false
+if t && !f { print "PASS: and not" } else { print "FAIL: and not" }
+if f || t { print "PASS: or" } else { print "FAIL: or" }
+if !(t && f) { print "PASS: grouped boolean" } else { print "FAIL: grouped boolean" }
+print "test_107 done"

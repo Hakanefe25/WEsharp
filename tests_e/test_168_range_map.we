@@ -1,0 +1,4 @@
+print "File: test_168_range_map.we"
+let values = map(range(1, 6), func(x) { return x * 10 })
+if values[0] == 10 && values[4] == 50 { print "PASS: map over range" } else { print "FAIL: map over range" }
+print "test_168 done"

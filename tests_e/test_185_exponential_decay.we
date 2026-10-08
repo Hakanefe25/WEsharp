@@ -1,0 +1,7 @@
+print "File: test_185_exponential_decay.we"
+func remaining(initial, half_life, time) {
+    return initial * math_basic("pow", 0.5, time / half_life)
+}
+let value = remaining(100.0, 10.0, 20.0)
+if value > 24.99 && value < 25.01 { print "PASS: two half lives" } else { print "FAIL: two half lives" }
+print "test_185 done"

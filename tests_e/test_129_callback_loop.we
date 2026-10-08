@@ -1,0 +1,13 @@
+print "File: test_129_callback_loop.we"
+func apply_n(f, count, value) {
+    let result = value
+    let i = 0
+    while i < count {
+        result = f(result)
+        i = i + 1
+    }
+    return result
+}
+func increment(x) { return x + 1 }
+if apply_n(increment, 25, 0) == 25 { print "PASS: callback loop" } else { print "FAIL: callback loop" }
+print "test_129 done"

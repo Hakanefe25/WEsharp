@@ -1,0 +1,9 @@
+print "File: test_195_string_concat_loop.we"
+let s = ""
+let i = 0
+while i < 50 {
+    s = s + "x"
+    i = i + 1
+}
+if len(s) == 50 { print "PASS: repeated string concat" } else { print "FAIL: repeated string concat" }
+print "test_195 done"

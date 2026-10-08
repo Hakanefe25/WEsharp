@@ -1,0 +1,5 @@
+print "File: test_184_logistic_step.we"
+func logistic_step(x, r, k) { return x + r * x * (1.0 - x / k) }
+let next = logistic_step(10.0, 0.1, 100.0)
+if next > 10.89 && next < 10.91 { print "PASS: logistic growth step" } else { print "FAIL: logistic growth step" }
+print "test_184 done"

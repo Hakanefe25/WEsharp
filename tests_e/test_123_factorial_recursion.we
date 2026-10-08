@@ -1,0 +1,7 @@
+print "File: test_123_factorial_recursion.we"
+func factorial(n) {
+    if n <= 1 { return 1 }
+    return n * factorial(n - 1)
+}
+if factorial(6) == 720 { print "PASS: factorial recursion" } else { print "FAIL: factorial recursion" }
+print "test_123 done"

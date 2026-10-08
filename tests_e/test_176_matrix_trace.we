@@ -1,0 +1,13 @@
+print "File: test_176_matrix_trace.we"
+func trace(m) {
+    let total = 0
+    let i = 0
+    while i < len(m) {
+        total = total + m[i][i]
+        i = i + 1
+    }
+    return total
+}
+let m = [[2, 0, 0], [0, 3, 0], [0, 0, 5]]
+if trace(m) == 10 { print "PASS: matrix trace" } else { print "FAIL: matrix trace" }
+print "test_176 done"

@@ -1,0 +1,6 @@
+print "File: test_105_decimal_precision.we"
+let x = 0.1 + 0.2
+if x > 0.299 && x < 0.301 { print "PASS: decimal tolerance" } else { print "FAIL: decimal tolerance" }
+let y = 7.5 / 2.5
+if y == 3 { print "PASS: decimal division" } else { print "FAIL: decimal division" }
+print "test_105 done"

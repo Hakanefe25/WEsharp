@@ -1,0 +1,5 @@
+print "File: test_111_if_true_branch.we"
+let marker = 0
+if true { marker = 1 } else { marker = 2 }
+if marker == 1 { print "PASS: true branch selected" } else { print "FAIL: true branch selected" }
+print "test_111 done"

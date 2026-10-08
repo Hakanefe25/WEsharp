@@ -1,0 +1,6 @@
+print "File: test_170_vector_addition.we"
+let a = [1, 2, 3]
+let b = [10, 20, 30]
+let c = a + b
+if c[0] == 11 && c[1] == 22 && c[2] == 33 { print "PASS: vector addition" } else { print "FAIL: vector addition" }
+print "test_170 done"

@@ -1,0 +1,6 @@
+print "File: test_150_replace_contains.we"
+let s = "native runtime native"
+if str_contains(s, "runtime") == true { print "PASS: contains substring" } else { print "FAIL: contains substring" }
+let changed = str_replace(s, "native", "fast")
+if changed == "fast runtime fast" { print "PASS: replace all occurrences" } else { print "FAIL: replace all occurrences" }
+print "test_150 done"

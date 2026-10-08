@@ -1,0 +1,10 @@
+print "File: test_196_repeat_function_calls.we"
+func square(x) { return x * x }
+let total = 0
+let i = 1
+while i <= 100 {
+    total = total + square(i)
+    i = i + 1
+}
+if total == 338350 { print "PASS: 100 repeated function calls" } else { print "FAIL: 100 repeated function calls" }
+print "test_196 done"

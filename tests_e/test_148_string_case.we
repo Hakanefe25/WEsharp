@@ -1,0 +1,5 @@
+print "File: test_148_string_case.we"
+let s = "WeSharp"
+if str_upper(s) == "WESHARP" { print "PASS: uppercase" } else { print "FAIL: uppercase" }
+if str_lower(s) == "wesharp" { print "PASS: lowercase" } else { print "FAIL: lowercase" }
+print "test_148 done"

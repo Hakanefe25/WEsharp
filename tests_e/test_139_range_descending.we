@@ -1,0 +1,5 @@
+print "File: test_139_range_descending.we"
+let values = range(5, 0)
+if len(values) == 5 { print "PASS: descending range length" } else { print "FAIL: descending range length" }
+if values[0] == 5 && values[4] == 1 { print "PASS: descending range bounds" } else { print "FAIL: descending range bounds" }
+print "test_139 done"

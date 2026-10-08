@@ -1,0 +1,7 @@
+print "File: test_106_comparisons.we"
+if 5 > 4 { print "PASS: greater than" } else { print "FAIL: greater than" }
+if 4 >= 4 { print "PASS: greater equal" } else { print "FAIL: greater equal" }
+if 3 < 8 { print "PASS: less than" } else { print "FAIL: less than" }
+if 8 <= 8 { print "PASS: less equal" } else { print "FAIL: less equal" }
+if 7 != 9 { print "PASS: not equal" } else { print "FAIL: not equal" }
+print "test_106 done"

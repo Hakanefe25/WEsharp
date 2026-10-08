@@ -1,0 +1,6 @@
+print "File: test_144_dict_of_lists.we"
+let groups = {"a": [1, 2, 3], "b": [4, 5]}
+if groups["a"][2] == 3 { print "PASS: dict list access" } else { print "FAIL: dict list access" }
+push(groups["b"], 6)
+if groups["b"][2] == 6 { print "PASS: dict list mutation" } else { print "FAIL: dict list mutation" }
+print "test_144 done"

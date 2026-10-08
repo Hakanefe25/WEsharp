@@ -1,0 +1,14 @@
+print "File: test_178_palindrome.we"
+func is_palindrome(s) {
+    let i = 0
+    let j = len(s) - 1
+    while i < j {
+        if s[i] != s[j] { return false }
+        i = i + 1
+        j = j - 1
+    }
+    return true
+}
+if is_palindrome("level") == true { print "PASS: palindrome true" } else { print "FAIL: palindrome true" }
+if is_palindrome("wsharp") == false { print "PASS: palindrome false" } else { print "FAIL: palindrome false" }
+print "test_178 done"

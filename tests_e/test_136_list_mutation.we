@@ -1,0 +1,5 @@
+print "File: test_136_list_mutation.we"
+let values = [1, 2, 3]
+values[1] = 99
+if values[1] == 99 { print "PASS: list index mutation" } else { print "FAIL: list index mutation" }
+print "test_136 done"

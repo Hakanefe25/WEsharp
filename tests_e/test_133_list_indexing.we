@@ -1,0 +1,5 @@
+print "File: test_133_list_indexing.we"
+let values = [11, 22, 33, 44]
+if values[0] == 11 { print "PASS: first index" } else { print "FAIL: first index" }
+if values[3] == 44 { print "PASS: last index" } else { print "FAIL: last index" }
+print "test_133 done"

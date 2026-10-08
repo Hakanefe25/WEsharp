@@ -1,0 +1,7 @@
+print "File: test_132_push_pop.we"
+let values = [1, 2]
+push(values, 3)
+let removed = pop(values)
+if removed == 3 { print "PASS: pop returns last" } else { print "FAIL: pop returns last" }
+if len(values) == 2 { print "PASS: pop shrinks list" } else { print "FAIL: pop shrinks list" }
+print "test_132 done"

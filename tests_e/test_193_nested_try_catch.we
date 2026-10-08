@@ -1,0 +1,15 @@
+print "File: test_193_nested_try_catch.we"
+let inner_caught = false
+let outer_ok = true
+try {
+    try {
+        let x = 1 / 0
+    } catch {
+        inner_caught = true
+    }
+} catch {
+    outer_ok = false
+}
+if inner_caught == true { print "PASS: inner catch handled error" } else { print "FAIL: inner catch handled error" }
+if outer_ok == true { print "PASS: handled error did not escape" } else { print "FAIL: handled error did not escape" }
+print "test_193 done"

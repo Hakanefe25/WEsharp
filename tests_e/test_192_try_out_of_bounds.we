@@ -1,0 +1,10 @@
+print "File: test_192_try_out_of_bounds.we"
+let caught = false
+let values = [1, 2, 3]
+try {
+    let value = values[99]
+} catch {
+    caught = true
+}
+if caught == true { print "PASS: list out of bounds caught" } else { print "FAIL: list out of bounds caught" }
+print "test_192 done"

@@ -1,0 +1,8 @@
+print "File: test_186_neuron_threshold.we"
+func fires(voltage, threshold) {
+    if voltage >= threshold { return true }
+    return false
+}
+if fires(-50, -55) == true { print "PASS: neuron above threshold" } else { print "FAIL: neuron above threshold" }
+if fires(-70, -55) == false { print "PASS: neuron below threshold" } else { print "FAIL: neuron below threshold" }
+print "test_186 done"

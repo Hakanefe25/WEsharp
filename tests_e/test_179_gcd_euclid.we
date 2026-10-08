@@ -1,0 +1,11 @@
+print "File: test_179_gcd_euclid.we"
+func gcd(a, b) {
+    while b != 0 {
+        let temp = b
+        b = a % b
+        a = temp
+    }
+    return a
+}
+if gcd(84, 30) == 6 { print "PASS: euclidean gcd" } else { print "FAIL: euclidean gcd" }
+print "test_179 done"

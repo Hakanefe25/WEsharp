@@ -1,0 +1,9 @@
+print "File: test_120_global_mutation.we"
+let count = 0
+func bump() { count = count + 1 }
+bump()
+bump()
+bump()
+bump()
+if count == 4 { print "PASS: function mutates global" } else { print "FAIL: function mutates global" }
+print "test_120 done"

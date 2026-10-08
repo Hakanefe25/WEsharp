@@ -1,0 +1,6 @@
+print "File: test_102_grouped_arithmetic.we"
+let a = (2 + 3) * 4
+if a == 20 { print "PASS: grouped multiplication" } else { print "FAIL: grouped multiplication" }
+let b = 100 / (5 * 4)
+if b == 5 { print "PASS: grouped denominator" } else { print "FAIL: grouped denominator" }
+print "test_102 done"

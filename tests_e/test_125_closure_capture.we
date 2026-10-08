@@ -1,0 +1,8 @@
+print "File: test_125_closure_capture.we"
+func make_offset(base) {
+    func apply(x) { return base + x }
+    return apply
+}
+let add7 = make_offset(7)
+if add7(5) == 12 { print "PASS: closure captures value" } else { print "FAIL: closure captures value" }
+print "test_125 done"

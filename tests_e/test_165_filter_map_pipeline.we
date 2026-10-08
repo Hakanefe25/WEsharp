@@ -1,0 +1,7 @@
+print "File: test_165_filter_map_pipeline.we"
+let values = range(1, 11)
+let evens = filter(values, func(x) { return x % 2 == 0 })
+let squares = map(evens, func(x) { return x * x })
+if len(squares) == 5 { print "PASS: pipeline length" } else { print "FAIL: pipeline length" }
+if squares[0] == 4 && squares[4] == 100 { print "PASS: pipeline values" } else { print "FAIL: pipeline values" }
+print "test_165 done"

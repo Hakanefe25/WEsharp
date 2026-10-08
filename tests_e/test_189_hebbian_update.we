@@ -1,0 +1,7 @@
+print "File: test_189_hebbian_update.we"
+func hebbian(weight, pre, post, rate) {
+    return weight + rate * pre * post
+}
+let w = hebbian(0.5, 1.0, 1.0, 0.1)
+if w > 0.599 && w < 0.601 { print "PASS: hebbian weight update" } else { print "FAIL: hebbian weight update" }
+print "test_189 done"

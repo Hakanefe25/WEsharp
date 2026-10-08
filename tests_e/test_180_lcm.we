@@ -1,0 +1,12 @@
+print "File: test_180_lcm.we"
+func gcd(a, b) {
+    while b != 0 {
+        let temp = b
+        b = a % b
+        a = temp
+    }
+    return a
+}
+func lcm(a, b) { return abs(a * b) / gcd(a, b) }
+if lcm(12, 18) == 36 { print "PASS: least common multiple" } else { print "FAIL: least common multiple" }
+print "test_180 done"

@@ -1,0 +1,10 @@
+print "File: test_119_scope_shadow.we"
+let value = 10
+func local_value() {
+    let value = 99
+    return value
+}
+let local = local_value()
+if local == 99 { print "PASS: local shadow value" } else { print "FAIL: local shadow value" }
+if value == 10 { print "PASS: global remains unchanged" } else { print "FAIL: global remains unchanged" }
+print "test_119 done"

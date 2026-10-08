@@ -1,0 +1,7 @@
+print "File: test_190_trace_decay.we"
+func decay(trace, dt, tau) {
+    return trace * math_basic("pow", 2.718, -dt / tau)
+}
+let t = decay(1.0, 10.0, 20.0)
+if t > 0.60 && t < 0.61 { print "PASS: exponential trace decay" } else { print "FAIL: exponential trace decay" }
+print "test_190 done"

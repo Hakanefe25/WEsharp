@@ -1,0 +1,13 @@
+print "File: test_174_prefix_sum.we"
+func prefix(values) {
+    let out = []
+    let total = 0
+    foreach value in values {
+        total = total + value
+        push(out, total)
+    }
+    return out
+}
+let p = prefix([1, 2, 3, 4])
+if p[0] == 1 && p[1] == 3 && p[3] == 10 { print "PASS: prefix sums" } else { print "FAIL: prefix sums" }
+print "test_174 done"

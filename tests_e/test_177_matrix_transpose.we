@@ -1,0 +1,6 @@
+print "File: test_177_matrix_transpose.we"
+let m = [[1, 2, 3], [4, 5, 6]]
+let t = [[m[0][0], m[1][0]], [m[0][1], m[1][1]], [m[0][2], m[1][2]]]
+if t[0][1] == 4 { print "PASS: transpose first column" } else { print "FAIL: transpose first column" }
+if t[2][0] == 3 && t[2][1] == 6 { print "PASS: transpose last row" } else { print "FAIL: transpose last row" }
+print "test_177 done"

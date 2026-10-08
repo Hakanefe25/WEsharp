@@ -1,0 +1,7 @@
+print "File: test_198_nested_collection_mutation.we"
+let state = {"layers": [[1, 2], [3, 4]]}
+state["layers"][0][1] = 20
+state["layers"][1][0] = 30
+if state["layers"][0][1] == 20 { print "PASS: nested mutation first" } else { print "FAIL: nested mutation first" }
+if state["layers"][1][0] == 30 { print "PASS: nested mutation second" } else { print "FAIL: nested mutation second" }
+print "test_198 done"

@@ -1,0 +1,4 @@
+print "File: test_157_std_dev_uniform.we"
+let values = [7, 7, 7, 7, 7, 7]
+if std_dev(values) == 0 { print "PASS: uniform standard deviation" } else { print "FAIL: uniform standard deviation" }
+print "test_157 done"

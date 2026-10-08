@@ -1,0 +1,21 @@
+print "File: test_173_bubble_sort_small.we"
+func bubble_sort(values) {
+    let n = len(values)
+    let i = 0
+    while i < n {
+        let j = 0
+        while j < n - i - 1 {
+            if values[j] > values[j + 1] {
+                let temp = values[j]
+                values[j] = values[j + 1]
+                values[j + 1] = temp
+            }
+            j = j + 1
+        }
+        i = i + 1
+    }
+    return values
+}
+let ordered = bubble_sort([5, 1, 4, 2, 8])
+if ordered[0] == 1 && ordered[4] == 8 { print "PASS: bubble sort" } else { print "FAIL: bubble sort" }
+print "test_173 done"

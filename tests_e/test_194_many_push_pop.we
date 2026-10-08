@@ -1,0 +1,15 @@
+print "File: test_194_many_push_pop.we"
+let values = []
+let i = 0
+while i < 500 {
+    push(values, i)
+    i = i + 1
+}
+if len(values) == 500 { print "PASS: 500 pushes" } else { print "FAIL: 500 pushes" }
+let j = 0
+while j < 250 {
+    pop(values)
+    j = j + 1
+}
+if len(values) == 250 { print "PASS: 250 pops" } else { print "FAIL: 250 pops" }
+print "test_194 done"

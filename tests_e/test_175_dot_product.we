@@ -1,0 +1,12 @@
+print "File: test_175_dot_product.we"
+func dot(a, b) {
+    let total = 0
+    let i = 0
+    while i < len(a) {
+        total = total + a[i] * b[i]
+        i = i + 1
+    }
+    return total
+}
+if dot([1, 2, 3], [4, 5, 6]) == 32 { print "PASS: dot product" } else { print "FAIL: dot product" }
+print "test_175 done"

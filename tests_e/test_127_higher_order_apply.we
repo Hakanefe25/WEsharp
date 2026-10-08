@@ -1,0 +1,6 @@
+print "File: test_127_higher_order_apply.we"
+func apply(f, value) { return f(value) }
+func triple(x) { return x * 3 }
+let result = apply(triple, 8)
+if result == 24 { print "PASS: higher order apply" } else { print "FAIL: higher order apply" }
+print "test_127 done"

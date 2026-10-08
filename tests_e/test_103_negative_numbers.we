@@ -1,0 +1,6 @@
+print "File: test_103_negative_numbers.we"
+let a = -10 + 3
+if a == -7 { print "PASS: negative addition" } else { print "FAIL: negative addition" }
+let b = -4 * -5
+if b == 20 { print "PASS: negative multiplication" } else { print "FAIL: negative multiplication" }
+print "test_103 done"

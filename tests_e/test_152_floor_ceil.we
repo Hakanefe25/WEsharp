@@ -1,0 +1,6 @@
+print "File: test_152_floor_ceil.we"
+if floor(4.9) == 4 { print "PASS: floor positive" } else { print "FAIL: floor positive" }
+if ceil(4.1) == 5 { print "PASS: ceil positive" } else { print "FAIL: ceil positive" }
+if floor(-1.2) == -2 { print "PASS: floor negative" } else { print "FAIL: floor negative" }
+if ceil(-1.8) == -1 { print "PASS: ceil negative" } else { print "FAIL: ceil negative" }
+print "test_152 done"

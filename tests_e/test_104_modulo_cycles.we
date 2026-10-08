@@ -1,0 +1,11 @@
+print "File: test_104_modulo_cycles.we"
+let a = 17 % 5
+if a == 2 { print "PASS: positive modulo" } else { print "FAIL: positive modulo" }
+let total = 0
+let i = 0
+while i < 20 {
+    if i % 4 == 0 { total = total + 1 }
+    i = i + 1
+}
+if total == 5 { print "PASS: modulo cycle count" } else { print "FAIL: modulo cycle count" }
+print "test_104 done"

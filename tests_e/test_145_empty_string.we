@@ -1,0 +1,6 @@
+print "File: test_145_empty_string.we"
+let s = ""
+if len(s) == 0 { print "PASS: empty string length" } else { print "FAIL: empty string length" }
+let joined = s + "abc"
+if joined == "abc" { print "PASS: empty string concat" } else { print "FAIL: empty string concat" }
+print "test_145 done"

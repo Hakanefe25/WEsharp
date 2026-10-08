@@ -1,0 +1,10 @@
+print "File: test_128_function_compose.we"
+func compose(f, g) {
+    func composed(x) { return f(g(x)) }
+    return composed
+}
+func plus1(x) { return x + 1 }
+func times2(x) { return x * 2 }
+let f = compose(times2, plus1)
+if f(10) == 22 { print "PASS: function compose" } else { print "FAIL: function compose" }
+print "test_128 done"

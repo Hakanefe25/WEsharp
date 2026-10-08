@@ -1,0 +1,5 @@
+print "File: test_151_abs_values.we"
+if abs(-123) == 123 { print "PASS: abs negative" } else { print "FAIL: abs negative" }
+if abs(0) == 0 { print "PASS: abs zero" } else { print "FAIL: abs zero" }
+if abs(45) == 45 { print "PASS: abs positive" } else { print "FAIL: abs positive" }
+print "test_151 done"

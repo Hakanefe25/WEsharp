@@ -1,0 +1,10 @@
+print "File: test_126_closure_factory_independence.we"
+func make_adder(n) {
+    func add(x) { return x + n }
+    return add
+}
+let add2 = make_adder(2)
+let add9 = make_adder(9)
+if add2(10) == 12 { print "PASS: first closure independent" } else { print "FAIL: first closure independent" }
+if add9(10) == 19 { print "PASS: second closure independent" } else { print "FAIL: second closure independent" }
+print "test_126 done"

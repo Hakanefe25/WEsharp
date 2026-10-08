@@ -1,0 +1,8 @@
+print "File: test_124_fibonacci_recursion.we"
+func fib(n) {
+    if n <= 0 { return 0 }
+    if n == 1 { return 1 }
+    return fib(n - 1) + fib(n - 2)
+}
+if fib(12) == 144 { print "PASS: fibonacci recursion" } else { print "FAIL: fibonacci recursion" }
+print "test_124 done"

@@ -1,0 +1,5 @@
+print "File: test_121_function_arguments.we"
+func calc(a, b, c) { return a + b * c }
+let value = calc(2, 3, 4)
+if value == 14 { print "PASS: function arguments" } else { print "FAIL: function arguments" }
+print "test_121 done"

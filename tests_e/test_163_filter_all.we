@@ -1,0 +1,5 @@
+print "File: test_163_filter_all.we"
+let values = [2, 4, 6, 8]
+let result = filter(values, func(x) { return x % 2 == 0 })
+if len(result) == 4 { print "PASS: filter all matches" } else { print "FAIL: filter all matches" }
+print "test_163 done"

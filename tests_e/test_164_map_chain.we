@@ -1,0 +1,6 @@
+print "File: test_164_map_chain.we"
+let values = [1, 2, 3]
+let doubled = map(values, func(x) { return x * 2 })
+let shifted = map(doubled, func(x) { return x + 1 })
+if shifted[0] == 3 && shifted[2] == 7 { print "PASS: chained maps" } else { print "FAIL: chained maps" }
+print "test_164 done"

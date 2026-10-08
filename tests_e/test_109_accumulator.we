@@ -1,0 +1,5 @@
+print "File: test_109_accumulator.we"
+let sum = 0
+foreach x in range(1, 101) { sum = sum + x }
+if sum == 5050 { print "PASS: 1 to 100 accumulator" } else { print "FAIL: 1 to 100 accumulator" }
+print "test_109 done"

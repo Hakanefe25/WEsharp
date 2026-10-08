@@ -1,0 +1,6 @@
+print "File: test_110_large_integer_exactness.we"
+let x = 1000000 * 1000
+if x == 1000000000 { print "PASS: billion arithmetic" } else { print "FAIL: billion arithmetic" }
+let y = x / 1000000
+if y == 1000 { print "PASS: large value division" } else { print "FAIL: large value division" }
+print "test_110 done"

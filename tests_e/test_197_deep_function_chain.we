@@ -1,0 +1,13 @@
+print "File: test_197_deep_function_chain.we"
+func f1(x) { return x + 1 }
+func f2(x) { return f1(x) + 1 }
+func f3(x) { return f2(x) + 1 }
+func f4(x) { return f3(x) + 1 }
+func f5(x) { return f4(x) + 1 }
+func f6(x) { return f5(x) + 1 }
+func f7(x) { return f6(x) + 1 }
+func f8(x) { return f7(x) + 1 }
+func f9(x) { return f8(x) + 1 }
+func f10(x) { return f9(x) + 1 }
+if f10(0) == 10 { print "PASS: deep function chain" } else { print "FAIL: deep function chain" }
+print "test_197 done"
